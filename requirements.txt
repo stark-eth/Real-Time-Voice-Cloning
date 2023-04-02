@@ -18,3 +18,4 @@ pyngrok
 streamlit==1.8.0
 fastapi
 loguru
+click==8.0.4
