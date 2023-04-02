@@ -274,28 +274,6 @@ class InputUI:
                 streamlit_app.audio(audio_bytes, format="audio/wav")
             return audio_bytes
 
-            # file_extension = None
-            # if "mime_type" in property:
-            #     file_extension = mimetypes.guess_extension(property["mime_type"])
-
-            # uploaded_file = streamlit_app.file_uploader(
-            #     **streamlit_kwargs, accept_multiple_files=False, type=file_extension
-            # )
-            # if uploaded_file is None:
-            #     return None
-
-            # bytes = uploaded_file.getvalue()
-            # if property.get("mime_type"):
-            #     if is_compatible_audio(property["mime_type"]):
-            #         # Show audio
-            #         streamlit_app.audio(bytes, format=property.get("mime_type"))
-            #     if is_compatible_image(property["mime_type"]):
-            #         # Show image
-            #         streamlit_app.image(bytes)
-            #     if is_compatible_video(property["mime_type"]):
-            #         # Show video
-            #         streamlit_app.video(bytes, format=property.get("mime_type"))
-            # return bytes
 
     def _render_single_string_input(
         self, streamlit_app: st, key: str, property: Dict
