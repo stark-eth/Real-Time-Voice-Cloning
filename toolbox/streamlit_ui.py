@@ -18,7 +18,7 @@ from . import schema_utils
 from .streamlit_utils import CUSTOM_STREAMLIT_CSS
 
 STREAMLIT_RUNNER_SNIPPET = """
-from control.mkgui.base.ui import render_streamlit_ui
+from toolbox import render_streamlit_ui
 
 import streamlit as st
 

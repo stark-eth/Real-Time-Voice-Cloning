@@ -11,7 +11,7 @@ from synthesizer.inference import Synthesizer
 from toolbox.ui import UI
 from toolbox.utterance import Utterance
 from vocoder import inference as vocoder
-
+from .streamlit_ui import render_streamlit_ui
 
 # Use this directory structure for your datasets, or modify it to fit your needs
 recognized_datasets = [
